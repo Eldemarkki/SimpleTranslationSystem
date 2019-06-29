@@ -1,33 +1,34 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace SimpleTranslationSystem
 {
     public class Language
     {
-        public string identifier;
-        public Translation[] translations;
+        public string code;
+        public List<Translation> translations;
 
-        public Language(string identifier)
+        public Language(string code)
         {
-            this.identifier = identifier;
+            this.code = code;
         }
 
-        public Language(string identifier, Translation[] translations)
+        public Language(string code, List<Translation> translations)
         {
-            this.identifier = identifier;
+            this.code = code;
             this.translations = translations;
         }
 
-        public string GetText(string text, bool caseSensitive = false)
+        public string GetText(string identifier, bool caseSensitive = false)
         {
             Translation translation;
             if (caseSensitive)
             {
-                translation = translations.FirstOrDefault(t => t.text == text);
+                translation = translations.FirstOrDefault(t => t.identifier == identifier);
             }
             else
             {
-                translation = translations.FirstOrDefault(t => t.text.ToLower() == text.ToLower());
+                translation = translations.FirstOrDefault(t => t.identifier.ToLower() == identifier.ToLower());
             }
 
             return translation.translation;
