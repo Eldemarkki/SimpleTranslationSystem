@@ -24,4 +24,4 @@ Other:
 
 The identifier in the id column can be called whatever you want. It will be the id that you will use when accessing a translation.
 
-The language codes (in this case, "en", "fi", "sv", and "de") can also be whatever you want, but it will make it more clear to use if you use the actual code of the language (can be found [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes))
+The language codes (in this case, "en", "fi", "sv", and "de") can also be whatever you want, but it will make it clearer if you use the actual code of the language (can be found [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes))
