@@ -64,5 +64,13 @@ namespace SimpleTranslationSystem
         {
             TranslationSystem.languages = languages;
         }
+
+        public static void SetColumnSeparator(char columnSeparator){
+            TranslationSystem.columnSeparator = columnSeparator;
+        }
+
+        public static char GetColumnSeparator(){
+            return TranslationSystem.columnSeparator;
+        }
     }
 }
