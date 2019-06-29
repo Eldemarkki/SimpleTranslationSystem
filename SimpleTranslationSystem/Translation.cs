@@ -3,12 +3,12 @@
     [System.Serializable]
     public struct Translation
     {
-        public string text;
+        public string identifier;
         public string translation;
 
-        public Translation(string text, string translation)
+        public Translation(string identifier, string translation)
         {
-            this.text = text;
+            this.identifier = identifier;
             this.translation = translation;
         }
     }
