@@ -10,7 +10,7 @@ Simple Translation System is exactly what it looks like. It's purpose is to prov
    - `TranslationSystem.GetText(string identifier)`
 
 Optionals:
-- Before the first step, you can set a custom column separator by doing `TranslationSystem.SetColumnSeparator(char columnSeparator`
+- Before the first step, you can set a custom column separator by doing `TranslationSystem.SetColumnSeparator(char columnSeparator)`
 
 Other:
 - Your .csv files should be formatted like this:
