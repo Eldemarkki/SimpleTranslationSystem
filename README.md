@@ -1,6 +1,11 @@
 # SimpleTranslationSystem
 Simple Translation System is exactly what it looks like. It's purpose is to provide a simple way to translate your app to whatever language you wish to!
   
+### Setup
+1. Clone the repository with `git clone https://github.com/Eldemarkki/SimpleTranslationSystem.git`
+2. At the root directory, build the project with `dotnet build`
+3. Now you can use the built .dll file like any other .dll file.
+  
 ### How to use
 1. Load a translation file
    - `TranslationSystem.SetLanguagesFromCSVFile(string pathToCsvFile)`
